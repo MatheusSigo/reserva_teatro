@@ -55,7 +55,7 @@ frm.addEventListener("submit",(e)=>{
     ? localStorage.getItem("tertroOcupadas").split(";")
     :[];
     //validar se a poltrona ja estiver ocupada
-    if(ocupadas.includes(poltrona.toString())){
+    if(reservadas.includes(poltrona.toString())){
         alert(`Poltrona ${poltrona} ja esta ocupada...`);
         frm.inPoltrona.value ="";
         frm.inPoltrona.focus();
